@@ -4,7 +4,7 @@ class AuthorsController < ApplicationController
   end
 
   def new
-    @author = Author.new
+    @author = Author.new(author_params)
   end
 
   def create
